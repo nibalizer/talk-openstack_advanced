@@ -1,0 +1,245 @@
+{
+  "oslo.version": "2.0",
+  "oslo.message": {
+    "_context_user_name": "demo",
+    "_context_user_domain": null,
+    "_context_read_only": false,
+    "_context_project_id": "2efad98195cc4ab2853f56aabe2681b2",
+    "_context_instance_lock_checked": false,
+    "_context_tenant": "2efad98195cc4ab2853f56aabe2681b2",
+    "_context_user_identity": "4491649dfbed466c8113105201bd07d4 2efad98195cc4ab2853f56aabe2681b2 - - -",
+    "_context_read_deleted": "no",
+    "_context_project_name": "demo",
+    "_unique_id": "5780f44118254443a02680195e1e4ae4",
+    "args": {
+      "reservations": [
+        "7bd162a3-6448-4a01-9de7-0a4c5388571e",
+        "0e976139-754e-4629-bbe5-cdcf57a13849",
+        "3519952c-f154-4edf-9f07-087d4b2fb044"
+      ],
+      "bdms": { 
+        "comment": "#bdms is block device mappings",
+        "nova_object.namespace": "nova",
+        "nova_object.data": {
+          "objects": [
+            {
+              "nova_object.namespace": "nova",
+              "nova_object.data": {
+                "id": 3,
+                "deleted_at": null,
+                "destination_type": "local",
+                "snapshot_id": null,
+                "device_type": "disk",
+                "created_at": "2016-04-22T21:11:47Z",
+                "connection_info": null,
+                "no_device": false,
+                "delete_on_termination": true,
+                "boot_index": 0,
+                "guest_format": null,
+                "disk_bus": null,
+                "instance_uuid": "ef7ba407-9f1a-4975-abf2-4077b3d36bfd",
+                "volume_id": null,
+                "deleted": false,
+                "updated_at": "2016-04-22T21:11:47Z",
+                "device_name": "/dev/vda",
+                "image_id": "04d19266-84db-4e82-9bac-95d155fb498f",
+                "source_type": "image",
+                "tag": null,
+                "volume_size": null
+              },
+              "nova_object.name": "BlockDeviceMapping",
+              "nova_object.version": "1.17"
+            }
+          ]
+        },
+        "nova_object.name": "BlockDeviceMappingList",
+        "nova_object.version": "1.17"
+      },
+      "instance": {
+        "nova_object.namespace": "nova",
+        "nova_object.data": {
+          "new_flavor": null,
+          "ramdisk_id": "24d1b1fd-ffbc-48fa-9cfe-48a54dc2b034",
+          "config_drive": "True",
+          "os_type": null,
+          "auto_disk_config": true,
+          "root_device_name": "/dev/vda",
+          "image_ref": "04d19266-84db-4e82-9bac-95d155fb498f",
+          "vcpus": 1,
+          "memory_mb": 128,
+          "launch_index": 0,
+          "locked_by": null,
+          "created_at": "2016-04-22T21:11:47Z",
+          "locked": false,
+          "root_gb": 0,
+          "cell_name": null,
+          "shutdown_terminate": false,
+          "task_state": "deleting",
+          "system_metadata": {
+            "image_base_image_ref": "04d19266-84db-4e82-9bac-95d155fb498f",
+            "image_disk_format": "ami",
+            "image_min_ram": "0",
+            "image_container_format": "ami",
+            "image_ramdisk_id": "24d1b1fd-ffbc-48fa-9cfe-48a54dc2b034",
+            "image_min_disk": "0",
+            "image_kernel_id": "177a2cf5-4fa3-4b7f-83d9-56aca9317599"
+          },
+          "user_id": "4491649dfbed466c8113105201bd07d4",
+          "architecture": null,
+          "ephemeral_key_uuid": null,
+          "host": "osat-00",
+          "updated_at": "2016-04-22T21:11:50Z",
+          "key_name": "nibz",
+          "deleted": false,
+          "access_ip_v4": null,
+          "access_ip_v6": null,
+          "pci_devices": {
+            "nova_object.namespace": "nova",
+            "nova_object.data": {
+              "objects": []
+            },
+            "nova_object.name": "PciDeviceList",
+            "nova_object.version": "1.3"
+          },
+          "instance_type_id": 12,
+          "disable_terminate": false,
+          "security_groups": {
+            "nova_object.namespace": "nova",
+            "nova_object.data": {
+              "objects": [
+                {
+                  "nova_object.namespace": "nova",
+                  "nova_object.data": {
+                    "name": "default",
+                    "project_id": "2efad98195cc4ab2853f56aabe2681b2",
+                    "user_id": "4491649dfbed466c8113105201bd07d4",
+                    "description": "default",
+                    "deleted": false,
+                    "created_at": "2016-04-21T23:22:25Z",
+                    "updated_at": null,
+                    "deleted_at": null,
+                    "id": 1
+                  },
+                  "nova_object.name": "SecurityGroup",
+                  "nova_object.version": "1.1"
+                }
+              ]
+            },
+            "nova_object.name": "SecurityGroupList",
+            "nova_object.version": "1.0"
+          },
+          "id": 3,
+          "reservation_id": "r-np7q6k7p",
+          "deleted_at": null,
+          "flavor": {
+            "nova_object.namespace": "nova",
+            "nova_object.data": {
+              "id": 12,
+              "updated_at": null,
+              "ephemeral_gb": 0,
+              "created_at": "2016-04-21T22:58:24Z",
+              "deleted": false,
+              "flavorid": "84",
+              "name": "m1.micro",
+              "root_gb": 0,
+              "disabled": false,
+              "memory_mb": 128,
+              "vcpus": 1,
+              "extra_specs": {},
+              "swap": 0,
+              "rxtx_factor": 1,
+              "is_public": true,
+              "deleted_at": null,
+              "vcpu_weight": 0
+            },
+            "nova_object.name": "Flavor",
+            "nova_object.version": "1.1"
+          },
+          "vm_mode": null,
+          "vm_state": "active",
+          "availability_zone": "nova",
+          "terminated_at": null,
+          "ephemeral_gb": 0,
+          "old_flavor": null,
+          "user_data": null,
+          "numa_topology": null,
+          "cleaned": false,
+          "display_name": "arst",
+          "uuid": "ef7ba407-9f1a-4975-abf2-4077b3d36bfd",
+          "default_swap_device": null,
+          "info_cache": {
+            "nova_object.namespace": "nova",
+            "nova_object.data": {
+              "deleted_at": null,
+              "updated_at": "2016-04-22T21:11:48Z",
+              "created_at": "2016-04-22T21:11:47Z",
+              "deleted": false,
+              "instance_uuid": "ef7ba407-9f1a-4975-abf2-4077b3d36bfd"
+            },
+            "nova_object.name": "InstanceInfoCache",
+            "nova_object.version": "1.5"
+          },
+          "hostname": "arst",
+          "launched_on": "osat-00",
+          "display_description": "arst",
+          "key_data": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDTDia7zLp6NB/DdzhGW/4MDgaQ1yemfF+fGFctrSbBZzP2Aj3RUlBh4Mut3bTIqp/PKNMXVZQbvig5nqF3sB87ZPvmk+7WluFFcQN1RIZnvkYXjF64C+G5PkEZOQW9nqEeElSCV2lXgK98FPrGtK6HgQlYxH5RJa6cufRwYLXLsAwfKRcS3P5oRU2KDORNm6uBfUuX0TyPgtEjYsjCWcffoW+E8kvZbx1DKxF4+u0mWSdkg0P40aAY10mHACtJ4hnu7xNa5Z9Oru1rA1KWL5NHISgy9t5zC1/0jWfYi+tqToBgUCyB8stWgNpHh+QJrpS8CoCDzQLBar0ynnOxBfHH2+s9xJapQNi6ZOC3khWkoxUJn2Gs9FXqow3zGSmEuEKbbUvaGC58U4S0xFcZzF+sOzjRJtw66wE2pQN5Pj/Qw09w6gt05g4nxoxkRVCwMLdnyoIY1oFmywJX3xC1Utu2oCNfgZSn78rqVkE9e11LczPNGvYjl6xQo1r254E0w3QBgo+LaTK5FBRCAbJ76n0IBJ8SZe9foPWjKTGlbCevM6KO8lm58/0m0EfMf9457ZM9KhyXwYvnb+iR7huGC+pwgGemJ4D6vjeE9EUNGSq6igg+v+cl1DHOxVb0s0Tx2T6DMh3usB4C1uoNCR303cmzrNZ94KLXRICQArSClQI7OQ== nibz@hertz",
+          "kernel_id": "177a2cf5-4fa3-4b7f-83d9-56aca9317599",
+          "power_state": 1,
+          "default_ephemeral_device": null,
+          "progress": 0,
+          "project_id": "2efad98195cc4ab2853f56aabe2681b2",
+          "launched_at": "2016-04-22T21:11:50Z",
+          "metadata": {},
+          "node": "osat-00"
+        },
+        "nova_object.name": "Instance",
+        "nova_object.version": "2.1"
+      }
+    },
+    "_context_user_id": "4491649dfbed466c8113105201bd07d4",
+    "_context_user": "4491649dfbed466c8113105201bd07d4",
+    "_context_resource_uuid": null,
+    "_context_auth_token": "5829ac06bd1842419fcbf12e9c42fb74",
+    "_context_service_catalog": [
+      {
+        "name": "cinder",
+        "type": "volume",
+        "endpoints": [
+          {
+            "publicURL": "http://172.99.88.38:8776/v1/2efad98195cc4ab2853f56aabe2681b2",
+            "internalURL": "http://172.99.88.38:8776/v1/2efad98195cc4ab2853f56aabe2681b2",
+            "region": "RegionOne",
+            "adminURL": "http://172.99.88.38:8776/v1/2efad98195cc4ab2853f56aabe2681b2"
+          }
+        ]
+      },
+      {
+        "name": "cinderv2",
+        "type": "volumev2",
+        "endpoints": [
+          {
+            "publicURL": "http://172.99.88.38:8776/v2/2efad98195cc4ab2853f56aabe2681b2",
+            "internalURL": "http://172.99.88.38:8776/v2/2efad98195cc4ab2853f56aabe2681b2",
+            "region": "RegionOne",
+            "adminURL": "http://172.99.88.38:8776/v2/2efad98195cc4ab2853f56aabe2681b2"
+          }
+        ]
+      }
+    ],
+    "_context_quota_class": null,
+    "_context_request_id": "req-f28e76cb-9c6c-48e4-8a13-b0af9cdcbfec",
+    "_context_domain": null,
+    "_context_show_deleted": false,
+    "_context_is_admin": false,
+    "version": "4.0",
+    "_context_project_domain": null,
+    "_context_timestamp": "2016-04-22T21:17:12.150842",
+    "method": "terminate_instance",
+    "_context_remote_address": "172.99.88.38",
+    "_context_roles": [
+      "anotherrole",
+      "Member"
+    ]
+  }
+}
+
