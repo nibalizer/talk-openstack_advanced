@@ -108,6 +108,7 @@ DevStack
 
 
 People say to me: "Spencer, i tried to install openstack and i couldn't"
+
 Enter DevStack
 
 
@@ -201,7 +202,8 @@ History
 * Started 2010
 * Collaboration between Rackspace and NASA
 * Releases every 6 months
-* Mitaka is comming out RSN
+* Mitaka is out
+* Newton design summit starts tomorrow
 
 .. note::
     * I started working on it in 2014
@@ -504,7 +506,9 @@ Desginate
 
     DNS_DOMAIN_ID=9609dad3-fc98-451f-9bfc-0978be5733c5
 
-    designate --os-endpoint  https://region-a.geo-1.dns.hpcloudsvc.com/v1/ record-list 9609dad3-fc98-451f-9bfc-0978be5733c5
+    designate --os-endpoint  \
+    https://region-a.geo-1.dns.hpcloudsvc.com/v1/  \
+    record-list 9609dad3-fc98-451f-9bfc-0978be5733c5
 
 
 Magnum
@@ -657,6 +661,13 @@ References (cont)
 * oslo.messaging https://wiki.openstack.org/wiki/Oslo/Messaging#Concepts
 
 
+References
+==========
+
+* https://wiki.openstack.org/wiki/Magnum
+* https://wiki.openstack.org/wiki/Designate
+* https://wiki.openstack.org/wiki/Manila
+* https://wiki.openstack.org/wiki/Barbican
 
 
 
