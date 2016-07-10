@@ -7,13 +7,13 @@
 OpenStack Advanced Topics
 =========================
 
-.. figure:: _static/TuxTotem.png
+.. figure:: _static/txlf_header_cropped.png
    :align: left
    :width: 400px
 
 Spencer Krum, IBM
 
-April 24th, 2016
+July 9th, 2016
 
 @nibalizer
 
@@ -46,26 +46,29 @@ Portland
       :align: center
 
 
-.. slide:: 
-   :level: 2
-
-   .. figure:: _static/oh-snap-gif-1.gif
-      :align: center
-
 Agenda
 ======
 
 * Introduction
 * Basic OpenStack Stuff
+* Shade
+* Ansible
+* Terraform
+* DIB
+* Ancillary Services
+* DevStack
+* OpenStack Debugging
+
+
+Ancillary Services
+==================
+
 * Manilla
 * Designate
 * Barbican
-* Magnum
-* lbaas
-* DevStack
-* OpenStack Debugging
+* Magnum/Higgins/Zun
+* lbaas/octavia
 * Ironic/Bifrost
-
 
 
 Who Am I?
@@ -111,6 +114,14 @@ People say to me: "Spencer, i tried to install openstack and i couldn't"
 
 Enter DevStack
 
+
+DIB: Disk Image Builder
+=======================
+
+
+* Disk Image Creation Tool
+* Packerish
+* Can make docker and rkt /things/
 
 
 
@@ -192,6 +203,7 @@ The Four Opens
     * Design is open and open to contributors
     * The development is done in the open with open tooling
     * The discussion and voting and technical direction is all transparent
+    * Lazy consensus
     * There is a CoC
 
 
@@ -203,7 +215,7 @@ History
 * Collaboration between Rackspace and NASA
 * Releases every 6 months
 * Mitaka is out
-* Newton design summit starts tomorrow
+* Newton design summit was here in austin
 
 .. note::
     * I started working on it in 2014
@@ -349,6 +361,11 @@ Deployment: List Hosts
         cacti-hodor-dfc7a021-3d50-4c3c-8082-a0aecb6d3878
 
 
+.. note::
+
+    * Demo This
+
+
 Deployment: Playbook
 ====================
 
@@ -397,6 +414,9 @@ Deployment: Boot Many Machines
     PLAY RECAP *********************************************************************
     localhost                  : ok=2    changed=1    unreachable=0    failed=0   
 
+.. note::
+
+    * Demo This
 
 Deployment: Results
 ==============================
@@ -411,6 +431,13 @@ Deployment: Results
         baz
         cacti-hodor-dfc7a021-3d50-4c3c-8082-a0aecb6d3878
 
+
+Deployment: Terraform
+=====================
+
+
+* Terraform is a hashicorp project
+* Used to describe server state
 
 
 Library: Shade
@@ -460,6 +487,14 @@ Library: Shade usage
     cloud.create_server(server_name, image['id'], flavor['id'], key_name=key[0]['id'])
 
 
+Library: Shade
+==============
+
+* Inventory Command
+* Inventory Webapp
+
+
+
 Further Services
 ================
 
@@ -485,6 +520,8 @@ Barbican
 * Let's Encrypt makes this less of a requirement
 * Interesting relationship with keystone
 * Presentations going back to grizzly
+* Rumoured to be dead
+* Used in Octavia
 
 
 
@@ -527,6 +564,12 @@ Magnum
 
     magnum bay-create --name k8s_bay --baymodel kubernetes --node-count 2
 
+
+Magnum
+======
+
+* New project 'Zun' (formerly 'Higgins') is going to be a direct 'run container' api.
+* Separate from nova-docker
 
 
 Database Investigation
@@ -638,10 +681,16 @@ The problem is every cloud is different
 Consistent flavor names and image names, and network names would make it easier
 Standards things
 
-image std-ubuntu-14.04
-flavor std-small-1
+* image: std-ubuntu-14.04
+
+* flavor: std-small-1
 
 
+
+Bifrost
+=======
+
+* Demo
 
 
 
@@ -668,6 +717,7 @@ References
 * https://wiki.openstack.org/wiki/Designate
 * https://wiki.openstack.org/wiki/Manila
 * https://wiki.openstack.org/wiki/Barbican
+* https://wiki.openstack.org/wiki/Bifrost
 
 
 
@@ -685,5 +735,5 @@ IBM
 
 nibz@spencerkrum.com
 
-https://github.com/nibalizer/talk-openstack_for_humans
+https://github.com/nibalizer/talk-openstack-advanced-topics
 
