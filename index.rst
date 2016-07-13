@@ -7,13 +7,13 @@
 OpenStack Advanced Topics
 =========================
 
-.. figure:: _static/txlf_header_cropped.png
+.. figure:: _static/openwest.gif
    :align: left
    :width: 400px
 
 Spencer Krum, IBM
 
-July 9th, 2016
+July 13th, 2016
 
 @nibalizer
 
